@@ -22,10 +22,6 @@ async function main() {
     const salt = ethers.ZeroHash;
     const initializer = signer.address;
 
-    contract.on("SoulWalletCreation", (walletAddress) => {
-        console.log(`SoulWalletCreation event emitted! Wallet Address: ${walletAddress}`);
-    });
-
     const tx = await contract.createWallet(initializer, salt);
 
     const receipt = await tx.wait();
