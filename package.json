@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "create-smart-wallet": "npx hardhat run scripts/create-smart-wallet.ts",
+    "transfer-ETH": "npx hardhat run scripts/transfer-ETH.ts"
+  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
