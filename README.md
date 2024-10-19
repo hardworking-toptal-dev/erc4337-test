@@ -1,13 +1,19 @@
-# Sample Hardhat Project
+# ERC 4337 Test
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This is simple test project to test ERC 4337 smart wallets.
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+1. Create a Smart Wallet:
+   - Use the factory wallet from the cloned repository to create a new smart wallet.
+
+   ```shell
+   npx hardhat run scripts/create-smart-wallet.ts
+   ```
+
+2. Transfer ETH:
+   - Implement a function to transfer ETH using a bundler (eg. Pimlico/) while ensuring that EntryPoint v7 is used.
+
+   ```shell
+   npx hardhat run scripts/transfer-ETH.ts
+   ```
