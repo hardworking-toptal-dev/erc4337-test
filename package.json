@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "create-smart-wallet": "npx hardhat run scripts/create-smart-wallet.ts",
+    "transfer-ETH": "npx hardhat run scripts/transfer-ETH.ts"
+  },
   "dependencies": {
-    "hardhat": "^2.22.13"
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.22.13",
+    "permissionless": "0.2.0-rc-5",
+    "viem": "2.20.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
